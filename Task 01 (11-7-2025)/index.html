@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 01</title>
+</head>
+
+<body>
+    <h1>XYZ Corporation Employee Management System</h1>
+    <h2>Developer Assessment Task</h2>
+    <p>Complete this Complex HTML Form with proper structure, validation attributes, and table layouts. Pay attention to
+        accessibility, scenmatic HTML, and form operation</p>
+    <ol>
+        <li>Fill the employee regestration form with all required fields.</li>
+        <li>Review the complex employee data table structure.</li>
+        <li>Understand the department hierarchy using nested lists.</li>
+        <li>Complete the performance review matrix table.</li>
+    </ol>
+    <h2>Employee Regestration Form</h2>
+    <form action="">
+        <fieldset style="height: 140px;">
+            <legend>Personal Information</legend>
+            <table border="1" id="personal-info">
+                <colgroup>
+                    <col width="100">
+                    <col width="150">
+                    <col width="100">
+                    <col width="150">
+                </colgroup>
+                <tr>
+                    <td><label for="employee-id">Employee ID: </label></td>
+                    <td><input id="employee-id" type="text" name="employee-id" placeholder="ABC1234"></td>
+                    <td><label for="hire-date">Hire Date: </label></td>
+                    <td><input type="date" name="hire-date" id="hire-date"></td>
+                </tr>
+                <tr>
+                    <td><label for="first-name">First Name: </label></th>
+                    <td><input id="first-name" name="first-name" type="text"></td>
+                    <td><label for="last-name">Last Name: </label></th>
+                    <td><input type="text" name="last-name" id="last-name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email: </label></th>
+                    <td><input id="email" name="email" type="email"></td>
+                    <td><label for="phone">Phone: </label></th>
+                    <td><input type="text" name="phone" id="phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth: </label></th>
+                    <td><input id="dob" name="dob" type="date"></td>
+                    <td><label for="ssn">SSN(Last 4) </label></th>
+                    <td><input type="text" name="ssn" id="ssn" maxlength="4" minlength="4"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <label for="address-info"></label>
+        <fieldset>
+            <legend>Address Information</legend>
+            <table border="1">
+                <colgroup>
+                    <col width="80">
+                    <col width="100">
+                    <col width="80">
+                    <col width="100">
+                </colgroup>
+                <tr>
+                    <td colspan="2"><label for="street-add">Street Address</label></td>
+                    <td colspan="2"><input type="text" id="street-add"></td>
+                </tr>
+                <tr>
+                    <td><Label for="city">City</Label></td>
+                    <td><input type="text" id="city" name="city"></td>
+                    <td><Label for="state">State</Label></td>
+                    <td><select name="state" id="state">
+                            <option value="">Select State</option>
+                            <option value="">California</option>
+                            <option value="">Huwei</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><Label for="zip-code">Zip Code</Label></td>
+                    <td><input type="text" id="zip-code" name="zip-code"></td>
+                    <td><Label for="country">Country</Label></td>
+                    <td><input type="text" placeholder="United State"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Employee Details</legend>
+            <table id="emp-details" border="1">
+                <colgroup>
+                    <col width="80">
+                    <col width="200">
+                    <col width="140">
+                </colgroup>
+                <tr>
+                    <td rowspan="2"><label for="dept">Department</label></td>
+                    <td>
+                        <input type="radio" name="dept" id="it">
+                        <label for="it">Information Technology</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="dept" id="hr">
+                        <label for="hr">Human Resource</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="dept" id="finance">
+                        <label for="finance">Finance</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="dept" id="marketing">
+                        <label for="marketing">Marketing</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="position">Position: </label></td>
+                    <td colspan="2">
+                        <select name="position" id="position">
+                            <option value="jr-developer">Junior Developer</option>
+                            <option value="sr-developer">Senior Developer</option>
+                            <option value="principal-developer">Principal Developer</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="annual-sal">Annual Salary: </label></td>
+                    <td><input type="number" name="annual-sal" id="annual-sal"></td>
+                    <td><label for="emp-type">Employment Type: </label></td>
+                    <td>
+                        <select name="emp-type" id="emp-type">
+                            <option value="full-time">Full Time</option>
+                            <option value="half-time">Half Time</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills and Qualification</legend>
+            <table id="skill-qualification" border="1">
+                <tr>
+                    <td rowspan="3"><label for="technical-skills">Technical Skils: </label></td>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="html-css">
+                        <label for="html-css">HTML/CSS</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="java-script">
+                        <label for="java-script">JavaScript</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="pyhton">
+                        <label for="pyhton">Python</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="java">
+                        <label for="java">Java</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="sql">
+                        <label for="sql">SQL</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="react">
+                        <label for="react">React</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="node">
+                        <label for="node">Node.js</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="aws">
+                        <label for="aws">AWS</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="tech-skills" id="docker">
+                        <label for="docker">Docker</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="year-exp">Year of Experisence: </label></td>
+                    <td><input type="text" name="year-exp" id="year-exp"></td>
+                    <td>0 Years</td>
+                    <td><label for="education-level">Education Level</label></td>
+                </tr>
+                <tr>
+                    <td><label for="resume">Upload Resume</label></td>
+                    <td><input type="file" name="resume" id="resume"></td>
+                    <td colspan="2">
+                        <select name="education-level" id="education-level">
+                            <option value="#">Select Education</option>
+                            <option value="matric">Matric</option>
+                            <option value="fsc">FSC</option>
+                            <option value="Bechlors">Bechlors</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <table border="1">
+                <tr>
+                    <td><label for="emergency-contact">Emergency Contact</label></td>
+                    <td><input type="text" name="emergency-contact" id="emergency-contact"></td>
+                    <td><label for="emergency-contact">Emergency Contact</label></td>
+                    <td><input type="text" id="emergency-contact" name="emergency-contact"></td>
+                </tr>
+                <tr>
+                    <td><label for="additional-comment">Additional Comment</label></td>
+                    <td colspan="3"><textarea name="additional-comment" id="additional-comment" cols="70"
+                            rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="prefered-start-date">Prefered Start Date</label></td>
+                    <td><input type="date" name="prefered-start-date" id="prefered-start-date"></td>
+                    <td><label for="prefered-shift">Prefered Shift</label></td>
+                    <td>
+                        <select name="prefered-shift" id="prefered-shift">
+                            <option value="9AM-5PM">9AM-5PM</option>
+                            <option value="6PM-12AM">6PM-12AM</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+        <input type="button" value="Save Draft">
+    </form>
+
+    <h2>Current Employee Database</h2>
+    <table border="1">
+        <caption>Employee Inforamtion Matrix - Q4 2024</caption>
+        <colgroup>
+            <col width="100">
+            <col width="130">
+            <col width="160">
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2">Employee ID</th>
+                <th rowspan="2">Name</th>
+                <th colspan="3">Department Information</th>
+                <th colspan="2">Performance Metrics</th>
+                <th rowspan="2">Status</th>
+            </tr>
+            <tr>
+                <th>Department</th>
+                <th>Position</th>
+                <th>Manager</th>
+                <th>Q3 Score</th>
+                <th>Q4 Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ABC1234</td>
+                <td>John Smith</td>
+                <td rowspan="3">Inforamtion Technology</td>
+                <td>Senior Developer</td>
+                <td rowspan="3">Sarah Johnson</td>
+                <td>95</td>
+                <td>97</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>ABC1235</td>
+                <td>Mike Devis</td>
+                <td>Developer</td>
+                <td>88</td>
+                <td>92</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>ABC1236</td>
+                <td>Lisa Chen</td>
+                <td>Junior Developer</td>
+                <td>82</td>
+                <td>85</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>HR2001</td>
+                <td>Emna Wilson</td>
+                <td rowspan="2">Human resource</td>
+                <td>HR Manager</td>
+                <td rowspan="2">Robert Brown</td>
+                <td>93</td>
+                <td>94</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>HR2002</td>
+                <td>David Lee</td>
+                <td>HR Coordinator</td>
+                <td>87</td>
+                <td>89</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>FIN3001</td>
+                <td>Maria Garcia</td>
+                <td>Finance</td>
+                <td>Financial Analyst</td>
+                <td>Jeanfier White</td>
+                <td>91</td>
+                <td>93</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>MKT4001</td>
+                <td>Alex Thompson</td>
+                <td rowspan="2">Marketing</td>
+                <td>Marketing Manager</td>
+                <td rowspan="2">Kevin Miller</td>
+                <td>89</td>
+                <td>91</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>MKT4002</td>
+                <td>Rachel Green</td>
+                <td>Marketing Specialist</td>
+                <td>85</td>
+                <td>88</td>
+                <td>On Leave</td>
+            </tr>
+            <tr>
+                <td colspan="5">Total Employee: 8</td>
+                <td>AVG Q3: 89</td>
+                <td>AVG Q4: 91</td>
+                <td>Active: ?</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Department Hierarchy</h2>
+    <h3>Organizational Structure</h3>
+    <ul>
+        <li>Executive Level</li>
+        <ul>
+            <li>CEO - Richard Anderson</li>
+            <li>COO - Particia Davis</li>
+            <li>CTO - Michel Chang</li>
+        </ul>
+        <li>Information Technology Department</li>
+        <ul>
+            <li>IT Director - Sarah Johnson</li>
+            <ul>
+                <li>Development Team</li>
+                <ol>
+                    <li>Senior Developer - John Smith</li>
+                    <li>Developer - Mike Devis</li>
+                    <li>Junior Developer - Lisa Chen</li>
+                </ol>
+                <li>Infrastructure Team</li>
+                <ol>
+                    <li>System Administrator - Tom Wilson</li>
+                    <li>Network Engineer - Andy Reriguez</li>
+                </ol>
+            </ul>
+        </ul>
+        <li>Human Resource</li>
+        <ul>
+            <li>HR Director</li>
+            <ul>
+                <li>Recruitment Team</li>
+                <ol>
+                    <li>HR Manager - Emnam Wilson</li>
+                    <li>HR Coordinator - David Lee</li>
+                </ol>
+                <li>Employee Relations</li>
+                <ol>
+                    <li>Benifits Administrator - Jessia Moree</li>
+                </ol>
+            </ul>
+        </ul>
+        <li>Finance Department</li>
+        <ul>
+            <li>Finance Director - Jeanfier White</li>
+            <ul>
+                <li>Accounting Team</li>
+                <ol>
+                    <li>Senior Accountant - Maria Garcia</li>
+                    <li>Accounts Payable - Carlos Martinez</li>
+                    <li>Accounts Recievable - Ladia Johnson</li>
+                </ol>
+            </ul>
+        </ul>
+        <li>Marketing Department</li>
+        <ul>
+            <li>Marketing Director</li>
+            <ul>
+                <li>Digital Marketing</li>
+                <ol>
+                    <li>Marketing Mnager - Alex Thompson</li>
+                    <li>Marketing Specialist - Rachiel Green</li>
+                    <li>SEO Specialist - Brain Tylor</li>
+                </ol>
+                <li>Contest Team</li>
+                <ol>
+                    <li>Contest Writer - Hannah Lewis</li>
+                    <li>Graphics Designer - Stervo Clark</li>
+                </ol>
+            </ul>
+        </ul>
+    </ul>
+
+    <h2>Performance Review Matrix</h2>
+    <table border="1">
+        <caption>Annual Performance Review - 2024</caption>
+        <thead>
+            <tr>
+                <th rowspan="3">Employee</th>
+                <th colspan="6">Performance Categories</th>
+                <th rowspan="3">Overall Rating</th>
+            </tr>
+            <tr>
+                <th colspan="2">Technical Skills</th>
+                <th colspan="2">Soft Skills</th>
+                <th colspan="2">Leadership</th>
+            </tr>
+            <tr>
+                <th>Self Rating</th>
+                <th>Manger Rating</th>
+                <th>Self Rating</th>
+                <th>Manger Rating</th>
+                <th>Self Rating</th>
+                <th>Manger Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Smith</td>
+                <td>9</td>
+                <td>9</td>
+                <td>8</td>
+                <td>9</td>
+                <td>8</td>
+                <td>9</td>
+                <td rowspan="2">Exceeds Expectation</td>
+            </tr>
+            <tr>
+                <td>Mike Devis</td>
+                <td>8</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Lisa Chen</td>
+                <td>7</td>
+                <td>7</td>
+                <td>8</td>
+                <td>8</td>
+                <td>5</td>
+                <td>6</td>
+                <td>Meets Expectation</td>
+            </tr>
+            <tr>
+                <td>Emnam Wilson</td>
+                <td>6</td>
+                <td>7</td>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+                <td rowspan="2">Meets Expectation</td>
+            </tr>
+            <tr>
+                <td>David Lee</td>
+                <td>6</td>
+                <td>6</td>
+                <td>8</td>
+                <td>8</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Maria Garcia</td>
+                <td>8</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7</td>
+                <td>7</td>
+                <td>Meets Expectation</td>
+            </tr>
+            <tr>
+                <td>Department Average: </td>
+                <td colspan="2">7.5</td>
+                <td colspan="2">8.2</td>
+                <td colspan="2">7.1</td>
+                <td>7.6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Task Completion Checklist</h2>
+    <h3>Developer Assessment Points:</h3>
+    <ol>
+        <li>Form Structure and Validation</li>
+        <ul>
+            <li>All input types implemented correctly</li>
+            <li>Required field validation in place</li>
+            <li>Prooper form organization with fieldsets</li>
+            <li>Accessibility labels and associations</li>
+        </ul>
+        <li>Table Complexity</li>
+        <ul>
+            <li>Multiple colspans and rowspans</li>
+            <li>Proper table headers and structure</li>
+            <li>Caption and footer elements</li>
+            <li>Sematic table makeup</li>
+        </ul>
+        <li>List Stucture</li>
+        <ul>
+            <li>Nested unordered lists for hierarchy</li>
+            <li>Ordered lists for sequential data</li>
+            <li>Mixed lists types appropriately</li>
+        </ul>
+        <li>HTML 5 Semantic Elements</li>
+        <ul>
+            <li>Proper use of header, main, section tags</li>
+            <li>appropriate heading hierarchy</li>
+            <li>Fieldset and legend use</li>
+        </ul>
+    </ol>
+    <p><strong>Note: </strong>This is a complex HTML assessment designed to test advanced form handling structure and
+        Semantic HTML Knowledge. No CSS and JavaScript required - focus on clean semantic HTML structure.</p>
+
+</body>
+
+</html>
