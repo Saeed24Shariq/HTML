@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+</head>
+
+<body>
+    <header>
+        <h1>🏢 Company Portal Dashboard (All-in-One Table Layout)</h1>
+    </header>
+    <main>
+        <table cellspacing="0" border="1">
+            <tr>
+                <td rowspan="2">
+                    <h1>About</h1>
+                    <p>Welcome to the <abbr title="Information Technology">IT</abbr> company dashboard.</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Excellence in every line of code."</p>
+                    <label for="progress">Progress: </label>
+                    <progress id="progress" value="75"></progress>
+                </td>
+                <td colspan="2">
+                    <h1>Department</h1>
+                    <table border="1">
+                        <colgroup>
+                            <col width="240">
+                            <col width="240">
+                            <col width="240">
+                            <col width="240">
+                        </colgroup>
+                        <tr>
+                            <th rowspan="2">Department</th>
+                            <th colspan="2">Staff</th>
+                            <th rowspan="2">Budget ($K)</th>
+                        </tr>
+                        <tr>
+                            <th>Manager</th>
+                            <th>Employees</th>
+                        </tr>
+                        <tr>
+                            <td>IT</td>
+                            <td>Alice</td>
+                            <td>15</td>
+                            <td rowspan="2">500</td>
+                        </tr>
+                        <tr>
+                            <td>DevOps</td>
+                            <td>Mark</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>HR</td>
+                            <td>Bob</td>
+                            <td>8</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Total Budget: </td>
+                            <td>700</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="Thanks.html">
+                        <h1>Regestration Form</h1>
+                        <fieldset>
+                            <legend>Personal Info</legend>
+                            <label for="id">ID: </label>
+                            <input type="text" name="id" id="id"><br>
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name"><br>
+                            <label for="language">Language</label>
+                            <input type="text" name="language" id="language">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Job Info</legend>
+                            <label for="dept">Dept: </label>
+                            <select name="dept" id="dept">
+                                <option value="it">IT</option>
+                                <option value="hr">HR</option>
+                                <option value="management">Management</option>
+                            </select><br><br>
+                            <label for="start">Start</label>
+                            <input type="date" name="start" id="start">
+                        </fieldset><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </td>
+                <td>
+                    <h1>Media</h1>
+                    <h2>Team Photo</h2>
+                    <img src="./Assets/team-iamge.webp" alt="Team Image" height="150">
+                    <h2>Video</h2>
+                    <video width="200" autoplay controls>
+                        <source src="./Assets/Video.webm" type="video/mp4">
+                        Your Browser Does not Support the video
+                    </video>
+                    <h2>Audio</h2>
+                    <audio controls>
+                        <source src="./Assets/Chann Sitare - Ammy Virk.mp3" type="audio/mp3">
+                    </audio>
+                    <h2>MathML Formula</h2>
+                    <p align="center">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+                    <h2>Location Map</h2>
+                    <div class="embed-map-fixed">
+                        <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=University%20of%20Oxford&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                                href="https://sprunkiretake.net"
+                                style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
+                                retake</a></div>
+                        <style>
+                            .embed-map-fixed {
+                                position: relative;
+                                text-align: left;
+                                width: 220px;
+                                height: 220px;
+                            }
+
+                            .embed-map-container {
+                                overflow: hidden;
+                                background: none !important;
+                                width: 600px;
+                                height: 400px;
+                            }
+
+                            .embed-map-frame {
+                                width: 200px !important;
+                                height: 200px !important;
+                            }
+                        </style>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table border="1">
+                        <colgroup>
+                            <col width="611">
+                            <col width="611">
+                        </colgroup>
+                        <tr>
+                            <td>
+                                <h1>FAQ</h1>
+                                <details>
+                                    <summary>Login Issues</summary>
+                                </details>
+                                <details>
+                                    <summary>Shortcuts</summary>
+                                </details>
+                            </td>
+                            <td>
+                                <h1>Tools</h1>
+                                <p>Code Sample:</p>
+                                <code>&lt;div&gt;Hello&lt;/div&gt;</code><br><br>
+                                <label for="server-uptime">Server Uptime: </label>
+                                <meter value="100"></meter>
+                                <p>Status: <mark>All systems operational</mark></p><br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2025 Company Portal | NEXT PAK AGILE SOLUTION</p>
+    </footer>
+</body>
+
+</html>
