@@ -15,11 +15,7 @@
         <table cellspacing="0" border="1">
             <tr>
                 <td rowspan="2">
-                    <h1>About</h1>
-                    <p>Welcome to the <abbr title="Information Technology">IT</abbr> company dashboard.</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Excellence in every line of code."</p>
-                    <label for="progress">Progress: </label>
-                    <progress id="progress" value="75"></progress>
+                    <img src="./Assets/ME.jpeg" alt="" height="1200" width="360px">
                 </td>
                 <td colspan="2">
                     <h1>Department</h1>
@@ -69,11 +65,11 @@
                         <h1>Regestration Form</h1>
                         <fieldset>
                             <legend>Personal Info</legend>
-                            <label for="id">ID: </label>
-                            <input type="text" name="id" id="id"><br>
-                            <label for="name">Name: </label>
-                            <input type="text" name="name" id="name"><br>
-                            <label for="language">Language</label>
+                            <label for="id" style="margin-right: 45px;">ID: </label>
+                            <input type="text" name="id" id="id"><br><br>
+                            <label for="name" style="margin-right: 25px;">Name: </label>
+                            <input type="text" name="name" id="name"><br><br>
+                            <label for="language">Language: </label>
                             <input type="text" name="language" id="language">
                         </fieldset>
                         <fieldset>
@@ -84,82 +80,121 @@
                                 <option value="hr">HR</option>
                                 <option value="management">Management</option>
                             </select><br><br>
-                            <label for="start">Start</label>
+                            <label for="start">Start: </label>
                             <input type="date" name="start" id="start">
                         </fieldset><br>
                         <input type="submit" value="Submit">
                     </form>
                 </td>
                 <td>
-                    <h1>Media</h1>
-                    <h2>Team Photo</h2>
-                    <img src="./Assets/team-iamge.webp" alt="Team Image" height="150">
-                    <h2>Video</h2>
-                    <video width="200" autoplay controls>
-                        <source src="./Assets/Video.webm" type="video/mp4">
-                        Your Browser Does not Support the video
-                    </video>
-                    <h2>Audio</h2>
-                    <audio controls>
-                        <source src="./Assets/Chann Sitare - Ammy Virk.mp3" type="audio/mp3">
-                    </audio>
-                    <h2>MathML Formula</h2>
-                    <p align="center">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
-                    <h2>Location Map</h2>
-                    <div class="embed-map-fixed">
-                        <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
-                                marginheight="0" marginwidth="0"
-                                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=University%20of%20Oxford&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
-                                href="https://sprunkiretake.net"
-                                style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
-                                retake</a></div>
-                        <style>
-                            .embed-map-fixed {
-                                position: relative;
-                                text-align: left;
-                                width: 220px;
-                                height: 220px;
-                            }
-
-                            .embed-map-container {
-                                overflow: hidden;
-                                background: none !important;
-                                width: 600px;
-                                height: 400px;
-                            }
-
-                            .embed-map-frame {
-                                width: 200px !important;
-                                height: 200px !important;
-                            }
-                        </style>
-                    </div>
+                    <h2>Languages and their Courses</h2>
+                    <ul>
+                        <li>C++</li>
+                        <ul>
+                            <li>PF</li>
+                            <li>DSA</li>
+                            <li>OOP</li>
+                            <li>Web Engineering</li>
+                            <li>Game Developpment</li>
+                            <ul>
+                                <li>2D Game Development</li>
+                                <li>3D Game Development</li>
+                            </ul>
+                        </ul>
+                        <li>Java</li>
+                        <ul>
+                            <li>DSA</li>
+                            <li>OOP</li>
+                            <li>Web Engineering</li>
+                            <li>Networking</li>
+                            <li>Game Development</li>
+                            <ul>
+                                <li>2D Game Development</li>
+                                <li>3D Game Development</li>
+                            </ul>
+                        </ul>
+                        <li>C#</li>
+                        <ul>
+                            <li>OOP</li>
+                            <li>Web Engineering</li>
+                            <li>Visual Programing</li>
+                            <li>3D Game Development</li>
+                        </ul>
+                    </ul>
+                    <h1>Different Libraries &amp; Framework:</h1>
+                    <ol>
+                        <li>JavaScript</li>
+                        <ol type="A">
+                            <li>React JS</li>
+                            <li>Express JS</li>
+                            <li>Next JS</li>
+                        </ol>
+                        <li>C#</li>
+                        <ol type="i">
+                            <li>Blazor</li>
+                            <li>Razor</li>
+                        </ol>
+                        <li>Java</li>
+                        <ol>
+                            <li>Spring boot</li>
+                            <li>Swing</li>
+                            <li>Java FX</li>
+                        </ol>
+                    </ol>
+                    <h2>Languages Used: </h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>Rust</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
                 </td>
             </tr>
             <tr>
                 <td colspan="3">
                     <table border="1">
                         <colgroup>
-                            <col width="611">
-                            <col width="611">
+                            <col width="660">
+                            <col width="660">
                         </colgroup>
                         <tr>
                             <td>
-                                <h1>FAQ</h1>
-                                <details>
-                                    <summary>Login Issues</summary>
-                                </details>
-                                <details>
-                                    <summary>Shortcuts</summary>
-                                </details>
+                                <div class="embed-map-fixed">
+                                    <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0"
+                                            scrolling="no" marginheight="0" marginwidth="0"
+                                            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=University%20of%20Oxford&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                                            href="https://sprunkiretake.net"
+                                            style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki
+                                            retake</a></div>
+                                    <style>
+                                        .embed-map-fixed {
+                                            position: relative;
+                                            text-align: left;
+                                            width: 220px;
+                                            height: 220px;
+                                        }
+
+                                        .embed-map-container {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            width: 660px;
+                                            height: 400px;
+                                        }
+
+                                        .embed-map-frame {
+                                            width: 660px !important;
+                                            height: 220px !important;
+                                        }
+                                    </style>
+                                </div>
                             </td>
                             <td>
-                                <h1>Tools</h1>
-                                <p>Code Sample:</p>
-                                <code>&lt;div&gt;Hello&lt;/div&gt;</code><br><br>
-                                <label for="server-uptime">Server Uptime: </label>
-                                <meter value="100"></meter>
-                                <p>Status: <mark>All systems operational</mark></p><br>
+                                <video autoplay controls width="660" height="220px">
+                                    <source src="./Assets/Video.webm" type="video/mp4">
+                                    Your Browser Does not Support the video
+                                </video>
                             </td>
                         </tr>
                     </table>
