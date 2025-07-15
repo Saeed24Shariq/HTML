@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 03</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="0">
+        <colgroup>
+            <col width="300">
+            <col>
+            <col height="200">
+        </colgroup>
+        <tr>
+            <td colspan="2">
+                <h1 align="center">🏛️Complex Page Using Tables</h1>
+                <nav align="center">
+                    <a href="#forms">Form</a><span>|</span>
+                    <a href="#Records">Records</a><span>|</span>
+                    <a href="#media">Media</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;">
+                <section>
+                    <h2>Sections</h2>
+                    <ul>
+                        <li><a href="#forms">Regestration From</a></li>
+                        <li><a href="#records">Employee Records</a></li>
+                        <li><a href="#media">Media Gallery</a></li>
+                    </ul>
+                </section>
+            </td>
+            <td>
+                <section id="forms">
+                    <form action="">
+                        <h2>📝 Regestration Form</h2>
+                        <table border="1" align="center">
+                            <colgroup>
+                                <col width="200">
+                                <col width="770">
+                            </colgroup>
+                            <tr>
+                                <th colspan="2">Personal Information</th>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Full Name: </label></td>
+                                <td><input type="text" id="name" name="name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email</label></td>
+                                <td><input type="email" id="email" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Password</label></td>
+                                <td><input type="password" name="password" id="password"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="gender">Gender</label></td>
+                                <td>
+                                    <input type="radio" name="male" id="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="female" id="female">
+                                    <label for="female">Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="dob">Date of Birth</label></td>
+                                <td><input type="date" name="dob" id="dob"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="country">Country</label></td>
+                                <td>
+                                    <select name="country" id="country">
+                                        <option value="">--Select</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="India">India</option>
+                                        <option value="Nepal">Nepal</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="short-bio">Short Bio: </label></td>
+                                <td><textarea name="short-bio" id="short-bio"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <input type="submit" value="Regester">
+                                    <input type="reset" value="Reset">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+                <section id="records">
+                    <h2>📋 Employee Records</h2>
+                    <table border="1" align="center">
+                        <colgroup>
+                            <col width="120">
+                            <col width="220">
+                            <col width="220">
+                            <col width="120">
+                            <col width="280">
+                        </colgroup>
+                        <tr bgcolor="#c2bebe">
+                            <th rowspan="2">ID</th>
+                            <th rowspan="2">Name</th>
+                            <th colspan="2">Performance</th>
+                            <th rowspan="2">Remarks</th>
+                        </tr>
+                        <tr bgcolor="#c2bebe">
+                            <th>2024</th>
+                            <th>2025</th>
+                        </tr>
+                        <tr>
+                            <td>001</td>
+                            <td>Ali Raza</td>
+                            <td>Excellent</td>
+                            <td>Good</td>
+                            <td rowspan="2">Promoted</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Sara Khan</td>
+                            <td colspan="2">Outstanding</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>John Doe</td>
+                            <td>Average</td>
+                            <td>Poor</td>
+                            <td>Under Review</td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="media">
+                    <h2>🎨 Media Gallery</h2>
+                    <table border="1" align="center">
+                        <colgroup>
+                            <col width="150">
+                            <col width="520">
+                            <col width="150">
+                        </colgroup>
+                        <tr>
+                            <th>Image</th>
+                            <th>Audio</th>
+                            <th>Video</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./Assets/image01.jpg" alt="Image of a Beautiful girl with Camera"
+                                    height="150">
+                            </td>
+                            <td align="center">
+                                <audio src="./Assets/Chann Sitare - Ammy Virk.mp3" controls></audio>
+                            </td>
+                            <td>
+                                <video src="./Assets/Video.webm" height="100" controls autoplay></video>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h2 align="left">🔗 Contact Information Table</h2>
+                    <table border="1" align="center">
+                        <colgroup>
+                            <col width="320">
+                            <col width="320">
+                            <col width="320">
+                        </colgroup>
+                        <tr>
+                            <td rowspan="2">Department</td>
+                            <td colspan="2">Contact Details</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Phone</td>
+                        </tr>
+                        <tr>
+                            <td>HR</td>
+                            <td>hr@exapmle.com</td>
+                            <td>123-456-7890</td>
+                        </tr>
+                        <tr>
+                            <td>IT</td>
+                            <td>it@example.com</td>
+                            <td>987-654-3210</td>
+                        </tr>
+                    </table>
+                </section>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#cacbcc" align="center">
+                <p>&copy; 2025 Next Pak Agile Solutions | <a href="#forms">🔝 Back to Top</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
